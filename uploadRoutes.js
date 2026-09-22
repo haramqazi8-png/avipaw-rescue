@@ -5,8 +5,7 @@ const fs = require("fs");
 
 const router = express.Router();
 
-const uploadDir = path.join(__dirname, "..", "uploads");
-
+const uploadDir = path.join(__dirname, "uploads");
 if (!fs.existsSync(uploadDir)) {
   fs.mkdirSync(uploadDir, { recursive: true });
 }
@@ -22,8 +21,7 @@ router.post("/", upload.single("image"), (req, res) => {
       return res.status(400).json({ message: "No image file provided." });
     }
 
-    const url = "http://localhost:5000/uploads/" + req.file.filename;
-
+    const url = "/uploads/" + req.file.filename;
     res.status(200).json({ url: url });
   } catch (error) {
     console.error("ERROR:", error.message);
