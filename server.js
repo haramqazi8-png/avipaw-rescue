@@ -3,8 +3,8 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 
 const app = express();
-const PORT = 5000;
-const JWT_SECRET = "avipaw_rescue_secret_2026";
+const PORT = process.env.PORT || 5000;
+const JWT_SECRET = process.env.JWT_SECRET || "avipaw_rescue_secret_2026";
 
 process.env.JWT_SECRET = JWT_SECRET;
 
@@ -37,6 +37,7 @@ app.use("/uploads", express.static("uploads"));
 ========================= */
 
 const MONGODB_URI =
+  process.env.MONGODB_URI ||
   "mongodb://127.0.0.1:27017/avipaw_rescue";
 
 mongoose
