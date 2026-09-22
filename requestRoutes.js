@@ -1,13 +1,13 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-const Request = require("../models/Request");
-const Animal = require("../models/Animal");
+const Request = require("./Request");
+const Animal = require("./Animal");
 
 const {
   protect,
   adminOnly
-} = require("../middleware/authMiddleware");
+} = require("./authMiddleware");
 
 const router = express.Router();
 
