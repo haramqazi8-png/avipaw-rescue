@@ -54,12 +54,12 @@ mongoose
    ROUTES
 ========================= */
 
-const animalRoutes = require("./routes/animalRoutes");
-const storyRoutes = require("./routes/storyRoutes");
-const requestRoutes = require("./routes/requestRoutes");
-const authRoutes = require("./routes/authRoutes");
-const userRoutes = require("./routes/userRoutes");
-const uploadRoutes = require("./routes/uploadRoutes");
+const animalRoutes = require("./animalRoutes");
+const storyRoutes = require("./storyRoutes");
+const requestRoutes = require("./requestRoutes");
+const authRoutes = require("./authRoutes");
+const userRoutes = require("./userRoutes");
+const uploadRoutes = require("./uploadRoutes");
 
 app.use("/api/animals", animalRoutes);
 app.use("/api/stories", storyRoutes);
