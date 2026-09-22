@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Animal = require("../models/Animal");
-
+const Animal = require("./Animal");
 const {
   protect,
   adminOnly
