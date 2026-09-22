@@ -1,11 +1,7 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
-const User = require("../models/User");
-
-const {
-  protect,
-  adminOnly
-} = require("../middleware/authMiddleware");
+const User = require("./User");
+const { protect, adminOnly } = require("./authMiddleware");
 
 const router = express.Router();
 
