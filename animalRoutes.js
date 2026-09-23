@@ -4,7 +4,7 @@ const Animal = require("./Animal");
 const {
   protect,
   adminOnly
-} = require("../middleware/authMiddleware");
+} = require("./authMiddleware");
 
 const router = express.Router();
 
