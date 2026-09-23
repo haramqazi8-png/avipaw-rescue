@@ -62,7 +62,7 @@ const animalSchema = new mongoose.Schema(
     createdBy: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
-      required: [true, "Animal owner is required"]
+      required: [false, "Animal owner is required"]
     }
   },
   {
