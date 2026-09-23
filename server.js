@@ -17,12 +17,12 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:3000",
-      "http://localhost:5174"
+      "http://localhost:5174",
+      "https://avipaw-frontend.netlify.app"
     ],
     credentials: true
   })
 );
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
