@@ -20,6 +20,7 @@ app.use(
       "http://localhost:5174",
       "https://avipaw-frontend.netlify.app",
       "https://glistening-kangaroo-033c82.netlify.app"
+   
     ],
     credentials: true
   })
