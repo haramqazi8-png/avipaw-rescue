@@ -15,10 +15,11 @@ process.env.JWT_SECRET = JWT_SECRET;
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
+        "http://localhost:5173",
       "http://localhost:3000",
       "http://localhost:5174",
-      "https://avipaw-frontend.netlify.app"
+      "https://avipaw-frontend.netlify.app",
+      "https://glistening-kangaroo-033c82.netlify.app"
     ],
     credentials: true
   })
